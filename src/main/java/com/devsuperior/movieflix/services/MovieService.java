@@ -27,8 +27,9 @@ public class MovieService {
     }
 
     public Page<MovieCardDTO> searchMovies(Long genreId, Pageable pageable) {
-        Page<Movie> page = repository.searchMovies(genreId, pageable);
-        return page.map(MovieCardDTO::new);
+        Long genreIdParam = (genreId == 0) ? null : genreId;
+        Page<Movie> result = repository.searchMovies(genreIdParam, pageable);
+        return result.map(MovieCardDTO::new);
     }
 
 }
