@@ -119,4 +119,5 @@ src/main/java/com/devsuperior/movieflix/
 ## Autor
 
 **Bruno da Silva Garbero** 
+
 [LinkedIn](https://www.linkedin.com/in/bruno-garbero/) 
